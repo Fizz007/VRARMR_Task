@@ -11,7 +11,7 @@
 #absolutePosition{
     /* border: 1px solid red; */
     width: 99vw;
-    height: 99vh;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,5 +22,19 @@
 #lowerHalf{
     background-color: rgba(0, 0, 0, 0.7);
     height: 50%;
+}
+#lowerHalf>div:first-child{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 6vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 5px;
+}
+#lowerHalf>div>img{
+    height: 40%;
+}
 
+#lowerHalf>div:nth-child(2){
+    text-align: center;
 }
