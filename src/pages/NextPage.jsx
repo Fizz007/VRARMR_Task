@@ -74,14 +74,14 @@ export const NextPage = () => {
           </div>
           <div id="endCarousel">
             <img
-              src="./uiAssets/rightarrow.png"
-              alt="rightarrow"
+              src="./uiAssets/leftarrow.png"
+              alt="leftarrow"
               onClick={handleLeft}
             />
             <img src="./uiAssets/corousel.png" alt="" />
             <img
-              src="./uiAssets/leftarrow.png"
-              alt="leftarrow"
+              src="./uiAssets/rightarrow.png"
+              alt="rightarrow"
               onClick={handleRight}
             />
           </div>
