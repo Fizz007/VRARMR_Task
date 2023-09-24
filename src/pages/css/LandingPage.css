@@ -1,63 +1,65 @@
-#container{
-    /* border: 1px solid green; */
-    width: 99vw;
-    height: 99vh;
+#container {
+  /* border: 1px solid green; */
+  width: 99vw;
+  height: 99vh;
 }
 
-#backgroundVideo{
-    /* border: 1px solid red; */
-    height: 100%;
-    display: flex;
-    justify-content: center;
+#backgroundVideo {
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-video{
-   height: 100%;
+video {
+  height: 100%;
 }
 
-.centeredCircles{
-    /* border: 1px solid white; */
-    width: 99vw;
-    height: 99vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.centeredCircles {
+  /* border: 1px solid white; */
+  width: 99vw;
+  height: 99vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#circle1{
-    border: 1px solid white;
-    height: 180px;
-    width: 180px;
-    border-radius: 50%;
-    transition: transform 0.3s;
+.circles {
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: transform 0.3s;
 }
 
-#circle2{
-    border: 1px solid white;
-    height: 220px;
-    width: 220px;
-    border-radius: 50%;
-    transition: transform 0.3s;
+#circle1 {
+  height: 180px;
+  width: 180px;
 }
 
-#circle3{
-    border: 1px solid white;
-    height: 260px;
-    width: 260px;
-    border-radius: 50%;
-    transition: transform 0.3s;
-    animation: 1s linear 0s infinite alternate compress;
+#circle2 {
+  height: 220px;
+  width: 220px;
 }
 
+#circle3 {
+  height: 260px;
+  width: 260px;
+  animation: 0.9s linear 0s infinite alternate compress;
+}
 
 @keyframes compress {
-    from {
-        transform: scale(1.1);
-    }
-    to {
-      transform: scale(1);
-    }
+  from {
+    transform: scale(1.1);
   }
+  to {
+    transform: scale(1);
+  }
+}
+
+#middleText {
+  text-align: center;
+}
+
+
