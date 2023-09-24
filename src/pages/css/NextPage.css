@@ -10,7 +10,7 @@
 
 #absolutePosition{
     /* border: 1px solid red; */
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -37,4 +37,30 @@
 
 #lowerHalf>div:nth-child(2){
     text-align: center;
+}
+
+#endCarousel{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    /* border: 1px solid green;
+     */
+    padding: 15px 5px;
+}
+#endCarousel>img{
+    width: 90%;
+}
+#carouselImages{
+    display: flex;
+    align-items: end;
+    width: 86vw;
+    /* border: 1px solid; */
+    height: 17vh;
+    position: absolute;
+    bottom: 2%;
+    left:7%
+}
+#carouselImages>img{
+    width: 50%;
+    background-color: rgb(60, 58, 58);
 }
