@@ -11,7 +11,7 @@ export const LandingPage = () => {
   const [outerCircleVisiblity, setOuterCircleVisiblity] = React.useState('hidden');
 
   React.useEffect(() => {
-    //----------------inhale
+    //----------------inhale timeout functions----------------
     setTimeout(() => {
       setInnerCircle(1.1);
       setInnerCircleVisiblity('visible')
@@ -27,23 +27,28 @@ export const LandingPage = () => {
       setOuterCircleVisiblity('visible')
     }, 3000);
 
-    //---------------exhale
+    //---------------exhale timeout functions----------------
     setTimeout(() => {
       setInnerCircle(1);
-      setInnerCircleVisiblity('hidden')
     }, 9000);
+
+    setTimeout(()=>{
+      setInnerCircleVisiblity('hidden')
+    },9200)
 
     setTimeout(() => {
       setMiddleCircle(1);
-      setMiddleCircleVisiblity('hidden')
     }, 8000);
+
+    setTimeout(()=>{
+      setMiddleCircleVisiblity('hidden')
+    },8200)
 
     setTimeout(() => {
       setOuterCircle(1);
       setOuterCircleVisiblity('hidden')
     }, 7000);
   
-
   }, []);
 
   return (
