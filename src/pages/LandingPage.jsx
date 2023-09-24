@@ -18,13 +18,14 @@ export const LandingPage = () => {
   const [hText, setHText] = React.useState("INHALE");
   const [pText, setPText] = React.useState("3 SECONDS");
 
-  const [textVisible, setTextVisible] = React.useState("visible");
+  const [textVisible, setTextVisible] = React.useState("hidden");
 
   React.useEffect(() => {
     //----------------inhale timeout functions----------------
     setTimeout(() => {
       setInnerCircle(1.1);
       setInnerCircleVisiblity("visible");
+      setTextVisible('visible')
     }, 1000);
 
     setTimeout(() => {
@@ -44,6 +45,7 @@ export const LandingPage = () => {
 
     setTimeout(() => {
       setInnerCircleVisiblity("hidden");
+      setTextVisible('hidden')
     }, 8200);
 
     setTimeout(() => {
@@ -81,7 +83,7 @@ export const LandingPage = () => {
   return (
     <div id="container">
       <div id="backgroundVideo">
-        {/* <video autoPlay loop muted src="./src/uiAssets/loadingsteam.mp4"></video> */}
+        <video autoPlay loop muted src="./src/uiAssets/loadingsteam.mp4"></video>
       </div>
       <div className="centeredCircles">
         <div
