@@ -6,24 +6,44 @@ export const LandingPage = () => {
   const [middleCircle, setMiddleCircle] = React.useState(1);
   const [outerCircle, setOuterCircle] = React.useState(1);
 
+  const [innerCircleVisiblity, setInnerCircleVisiblity] = React.useState('hidden');
+  const [middleCircleVisiblity, setMiddleCircleVisiblity] = React.useState('hidden');
+  const [outerCircleVisiblity, setOuterCircleVisiblity] = React.useState('hidden');
+
   React.useEffect(() => {
+    //----------------inhale
     setTimeout(() => {
       setInnerCircle(1.1);
-      let circle1 = document.getElementById("circle1");
-      circle1.style.visibility = "visible";
+      setInnerCircleVisiblity('visible')
     }, 1000);
 
     setTimeout(() => {
       setMiddleCircle(1.1);
-      let circle2 = document.getElementById("circle2");
-      circle2.style.visibility = "visible";
+      setMiddleCircleVisiblity('visible')
     }, 2000);
 
     setTimeout(() => {
       setOuterCircle(1.1);
-      let circle3 = document.getElementById("circle3");
-      circle3.style.visibility = "visible";
+      setOuterCircleVisiblity('visible')
     }, 3000);
+
+    //---------------exhale
+    setTimeout(() => {
+      setInnerCircle(1);
+      setInnerCircleVisiblity('hidden')
+    }, 9000);
+
+    setTimeout(() => {
+      setMiddleCircle(1);
+      setMiddleCircleVisiblity('hidden')
+    }, 8000);
+
+    setTimeout(() => {
+      setOuterCircle(1);
+      setOuterCircleVisiblity('hidden')
+    }, 7000);
+  
+
   }, []);
 
   return (
@@ -32,15 +52,15 @@ export const LandingPage = () => {
         {/* <video autoPlay loop muted src="./src/uiAssets/loadingsteam.mp4"></video> */}
       </div>
       <div className="centeredCircles">
-        <div id="circle1" style={{ transform: `scale(${innerCircle})` }}></div>
+        <div id="circle1" style={{ transform: `scale(${innerCircle})`,visibility:innerCircleVisiblity }}></div>
       </div>
 
       <div className="centeredCircles">
-        <div id="circle2" style={{ transform: `scale(${middleCircle})` }}></div>
+        <div id="circle2" style={{ transform: `scale(${middleCircle})`,visibility:middleCircleVisiblity }}></div>
       </div>
 
       <div className="centeredCircles">
-        <div id="circle3" style={{ transform: `scale(${outerCircle})` }}></div>
+        <div id="circle3" style={{ transform: `scale(${outerCircle})`,visibility:outerCircleVisiblity }}></div>
       </div>
     </div>
   );
