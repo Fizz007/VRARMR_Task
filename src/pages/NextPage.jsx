@@ -54,14 +54,14 @@ export const NextPage = () => {
   return (
     <div>
       <div id="backgroundImage">
-        <img src="./src/uiAssets/background.png" alt="backgroundImage" />
+        <img src="./uiAssets/background.png" alt="backgroundImage" />
       </div>
 
       <div id="absolutePosition">
         <div id="lowerHalf">
           <div>
-            <img src="./src/uiAssets/rightarrow.png" alt="rightarrow" />
-            <img src="./src/uiAssets/leftarrow.png" alt="leftarrow" />
+            <img src="./uiAssets/rightarrow.png" alt="rightarrow" />
+            <img src="./uiAssets/leftarrow.png" alt="leftarrow" />
           </div>
           <div>
             <h2>Digital Interface</h2>
@@ -74,45 +74,45 @@ export const NextPage = () => {
           </div>
           <div id="endCarousel">
             <img
-              src="./src/uiAssets/rightarrow.png"
+              src="./uiAssets/rightarrow.png"
               alt="rightarrow"
               onClick={handleLeft}
             />
-            <img src="./src/uiAssets/corousel.png" alt="" />
+            <img src="./uiAssets/corousel.png" alt="" />
             <img
-              src="./src/uiAssets/leftarrow.png"
+              src="./uiAssets/leftarrow.png"
               alt="leftarrow"
               onClick={handleRight}
             />
           </div>
           <div id="carouselImages">
             <img
-              src="./src/uiAssets/profiles.png"
+              src="./uiAssets/profiles.png"
               alt="profiles"
               style={{ visibility: pic1 }}
             />
             <img
-              src="./src/uiAssets/aromaprofile.png"
+              src="./uiAssets/aromaprofile.png"
               alt="aromaProfile"
               style={{ visibility: pic2 }}
             />
             <img
-              src="./src/uiAssets/lightprofile.png"
+              src="./uiAssets/lightprofile.png"
               alt="lightProfile"
               style={{ visibility: pic3 }}
             />
             <img
-              src="./src/uiAssets/speakerprofile.png"
+              src="./uiAssets/speakerprofile.png"
               alt="speakerProfile"
               style={{ visibility: pic4 }}
             />
             <img
-              src="./src/uiAssets/steamprofile.png"
+              src="./uiAssets/steamprofile.png"
               alt="steamProfile"
               style={{ visibility: pic5 }}
             />
             <img
-              src="./src/uiAssets/wallpapers.png"
+              src="./uiAssets/wallpapers.png"
               alt="wallpapers"
               style={{ visibility: pic6 }}
             />

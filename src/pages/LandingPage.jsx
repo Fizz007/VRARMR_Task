@@ -83,7 +83,7 @@ export const LandingPage = () => {
   return (
     <div id="container">
       <div id="backgroundVideo">
-        <video autoPlay loop muted src="./src/uiAssets/loadingsteam.mp4"></video>
+        <video autoPlay loop muted src="./uiAssets/loadingsteam.mp4"></video>
       </div>
       <div className="centeredCircles">
         <div

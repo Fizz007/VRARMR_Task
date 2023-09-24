@@ -64,4 +64,5 @@
 #carouselImages>img{
     width: 50%;
     background-color: rgb(60, 58, 58);
+    border-radius: 50%;
 }
