@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import "./css/NextPage.css";
 
 export const NextPage = () => {
@@ -18,7 +18,7 @@ export const NextPage = () => {
     if (count > 1) setCount(count - 1);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     switch (count) {
       case 1:
         setPic1("visible");

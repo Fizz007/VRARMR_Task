@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./css/LandingPage.css";
 import { useNavigate } from "react-router-dom";
 
@@ -9,18 +9,18 @@ export const LandingPage = () => {
   const [outerCircle, setOuterCircle] = React.useState(1);
 
   const [innerCircleVisiblity, setInnerCircleVisiblity] =
-    React.useState("hidden");
+    useState("hidden");
   const [middleCircleVisiblity, setMiddleCircleVisiblity] =
-    React.useState("hidden");
+    useState("hidden");
   const [outerCircleVisiblity, setOuterCircleVisiblity] =
-    React.useState("hidden");
+    useState("hidden");
 
-  const [hText, setHText] = React.useState("INHALE");
-  const [pText, setPText] = React.useState("3 SECONDS");
+  const [hText, setHText] = useState("INHALE");
+  const [pText, setPText] = useState("3 SECONDS");
 
-  const [textVisible, setTextVisible] = React.useState("hidden");
+  const [textVisible, setTextVisible] = useState("hidden");
 
-  React.useEffect(() => {
+  useEffect(() => {
     //----------------inhale timeout functions----------------
     setTimeout(() => {
       setInnerCircle(1.1);
@@ -62,7 +62,7 @@ export const LandingPage = () => {
     }, 6000);
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     let timer = setTimeout(() => {
       setHText("HOLD");
       setPText("2 SECONDS");
