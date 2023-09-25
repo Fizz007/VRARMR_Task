@@ -1,6 +1,6 @@
 # vrarmr Assignment
 
-### Deployed: https://vrarmr-assignment-xi.vercel.app/
+### Deployed: 
 
 ## Snippets
 <div>
